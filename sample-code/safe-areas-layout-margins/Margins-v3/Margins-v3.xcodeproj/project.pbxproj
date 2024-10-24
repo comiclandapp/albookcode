@@ -92,7 +92,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1600;
 				ORGANIZATIONNAME = "Keith Harrison";
 				TargetAttributes = {
 					538746F52059417E00B4EACC = {
@@ -288,7 +288,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.useyourloaf.Margins-v3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -307,7 +307,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.useyourloaf.Margins-v3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

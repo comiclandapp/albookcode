@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -92,7 +92,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1600;
 				ORGANIZATIONNAME = "Keith Harrison";
 				TargetAttributes = {
 					5372791720542632002388BF = {
@@ -102,7 +102,7 @@
 				};
 			};
 			buildConfigurationList = 5372791320542632002388BF /* Build configuration list for PBXProject "SafeArea-v1" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -295,7 +295,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.useyourloaf.SafeArea-v1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -313,7 +313,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.useyourloaf.SafeArea-v1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

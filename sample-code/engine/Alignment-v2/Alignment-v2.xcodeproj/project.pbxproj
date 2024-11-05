@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -104,7 +104,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1620;
 				ORGANIZATIONNAME = "Keith Harrison";
 				TargetAttributes = {
 					5352F8162069389400DA836A = {
@@ -115,7 +115,7 @@
 				};
 			};
 			buildConfigurationList = 5352F8122069389400DA836A /* Build configuration list for PBXProject "Alignment-v2" */;
-			compatibilityVersion = "Xcode 8.0";
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -302,7 +302,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.useyourloaf.Alignment-v2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -320,7 +320,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.useyourloaf.Alignment-v2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

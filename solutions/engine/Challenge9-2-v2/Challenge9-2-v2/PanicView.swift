@@ -29,6 +29,7 @@
 
 import UIKit
 
+@MainActor
 @objc protocol PanicViewDelegate: AnyObject {
     func panic(_ sender: PanicView)
     func noPanic(_ sender: PanicView)

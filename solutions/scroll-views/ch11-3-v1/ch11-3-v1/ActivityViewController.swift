@@ -29,7 +29,6 @@
 import UIKit
 
 final class ActivityViewController: UIViewController {
-
     @IBOutlet private var scrollView: AdaptiveScrollView!
 
     private lazy var infoButton: UIButton = {

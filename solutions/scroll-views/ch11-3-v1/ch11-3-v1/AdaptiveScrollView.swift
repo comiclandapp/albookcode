@@ -29,7 +29,6 @@
 import UIKit
 
 final class AdaptiveScrollView: UIScrollView {
-
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()

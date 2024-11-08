@@ -28,7 +28,7 @@
 
 import UIKit
 
-final class MessageDataSource: NSObject {
+@MainActor final class MessageDataSource: NSObject {
     private let tableView: UITableView
     private let messages: [Message] = [
         Message(username: "Joe", text: "Hello World!"),

@@ -36,8 +36,18 @@ final class MessageCell: UITableViewCell, ReusableIdentifier {
     override func awakeFromNib() {
         super.awakeFromNib()
         if #available(iOS 10.0, *) {
-            [nameLabel,messageLabel].forEach {
-                $0?.adjustsFontForContentSizeCategory = true
+            // awakeFromNib is an extension on NSObject and
+            // is not declared as MainActor isolated. However,
+            // in this case it should only be called on the
+            // main actor so we can assume that to silence the
+            // strict concurrency warnings from the compiler.
+            //
+            // Note: If awakeFromNib is ever called from a
+            // different isolation domain this code will crash.
+            MainActor.assumeIsolated {
+                [nameLabel,messageLabel].forEach {
+                    $0?.adjustsFontForContentSizeCategory = true
+                }
             }
         }
     }

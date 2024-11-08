@@ -28,7 +28,7 @@
 
 import UIKit
 
-final class BookDataSource: NSObject {
+@MainActor final class BookDataSource: NSObject {
     private let tableView: UITableView
     private let book: Book?
     private let bookURL: URL

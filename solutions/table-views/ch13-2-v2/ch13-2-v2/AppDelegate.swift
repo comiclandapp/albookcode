@@ -28,9 +28,8 @@
 
 import UIKit
 
-@UIApplicationMain
+@main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
 
     private let book = Book(title: "Great Expectations",

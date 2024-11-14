@@ -29,7 +29,6 @@
 import UIKit
 
 final class TodayViewController: UIViewController {
-
     @IBOutlet private var titleLabel: UILabel!
     @IBOutlet private var imageView: UIImageView!
     @IBOutlet private var summaryLabel: UILabel!

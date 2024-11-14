@@ -31,16 +31,27 @@ import UIKit
 final class ViewController: UIViewController {
     @IBOutlet private var stackView: UIStackView!
 
-    private var initialSetupDone = false
+//    private var initialSetupDone = false
+//
+//    override func viewWillLayoutSubviews() {
+//        super.viewWillLayoutSubviews()
+//        if !initialSetupDone {
+//            configureView(for: view.bounds.size)
+//            initialSetupDone = true
+//        }
+//    }
 
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        if !initialSetupDone {
-            configureView(for: view.bounds.size)
-            initialSetupDone = true
-        }
+    
+    // viewIsAppearing was added in iOS 17, but is
+    // back deployable to iOS 13. It's a great place
+    // for configuring the view as it's called only
+    // once after the view is added to the view hierarchy
+    // so we can rely on the size being correct
+    override func viewIsAppearing(_ animated: Bool) {
+        super.viewIsAppearing(animated)
+        configureView(for: view.bounds.size)
     }
-
+    
     private func configureView(for size: CGSize) {
         if size.width > size.height {
             stackView.axis = .horizontal

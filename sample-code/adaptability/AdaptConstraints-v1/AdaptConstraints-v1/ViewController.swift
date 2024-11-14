@@ -1,4 +1,4 @@
-//  Copyright © 2018 Keith Harrison. All rights reserved.
+//  Copyright © 2018-2024 Keith Harrison. All rights reserved.
 //
 //  Redistribution and use in source and binary forms, with or without
 //  modification, are permitted provided that the following conditions are met:
@@ -48,16 +48,11 @@ final class ViewController: UIViewController {
         setupView()
     }
 
-    private var initialSetupDone = false
-
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        if !initialSetupDone {
-            activateConstraints(for: view.bounds.width)
-            initialSetupDone = true
-        }
+    override func viewIsAppearing(_ animated: Bool) {
+        super.viewIsAppearing(animated)
+        activateConstraints(for: view.bounds.width)
     }
-
+    
     private let leadingGuide = UILayoutGuide()
     private let middleGuide = UILayoutGuide()
     private let trailingGuide = UILayoutGuide()
